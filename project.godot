@@ -1,0 +1,145 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="CardioCath 3D"
+config/description="Interactive Virtual Cardiac Anatomy, Physiology, Electrophysiology & Catheterization Simulator (educational)."
+config/version="1.0.0"
+run/main_scene="res://scenes/main/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(0.0392157, 0.0666667, 0.117647, 1)
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+AppState="*res://scripts/core/app_state.gd"
+SceneRouter="*res://scripts/core/scene_router.gd"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/size/mode=2
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[internationalization]
+
+rendering/root_node_layout_direction=1
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+lights_and_shadows/directional_shadow/size=2048
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=1
+anti_aliasing/quality/msaa_3d=1
+environment/defaults/default_clear_color=Color(0.0392157, 0.0666667, 0.117647, 1)
+
+[shader_globals]
+
+heart_ep={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep2={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_sa={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_bb={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_v0={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_v1={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_v2={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_v3={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_v4={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_v5={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ep_focus={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_clip_plane={
+"type": "vec4",
+"value": Vector4(0, 0, 1, 10)
+}
+heart_clip_enabled={
+"type": "float",
+"value": 0.0
+}
+heart_c_ra={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_c_la={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_c_rv={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_c_lv={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_apex={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_base={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_remodel={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_remodel2={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_ischemia={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+heart_fib={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
